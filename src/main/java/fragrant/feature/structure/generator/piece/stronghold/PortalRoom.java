@@ -156,4 +156,8 @@ public class PortalRoom extends Stronghold.Piece {
         if (frames == null) return 0;
         return (int) frames.stream().filter(EndPortalFrameData::hasEye).count();
     }
+
+    public BPos getSpawnerPosition() {
+        return transformPosition(5, 6);
+    }
 }
